@@ -1,0 +1,1 @@
+House.where(name: 'House Bolton').each { |house| house.update(motto: 'No way. Why should I have to change? He''s the one who sucks.') }
