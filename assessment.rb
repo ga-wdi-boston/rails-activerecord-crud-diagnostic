@@ -70,15 +70,9 @@ end
 1) create and modify script/destroy_people.rb
 
 ******** code *********
-Licensee.transaction do
-  licensees = Licensee.all
-  licensees.each do |licensee|
-    if (licensee.surname = 'Rich' && licensee.given_name = 'Dylan')
-      licensee.destroy!
-    elsif (licensee.surname = 'Myers' && licensee.given_name = 'Teresita')
-      licensee.destroy!
-    end
-  end
-end
+dylan = Licensee.where("surname = 'Rich' AND given_name = 'Dylan'")
+dylan.destroy!
+teresita = Licensee.where("surname = 'Myers' AND given_name = 'Teresita'")
+teresita.destroy!
 ***********************
 2) rails r script/destroy_people.rb
