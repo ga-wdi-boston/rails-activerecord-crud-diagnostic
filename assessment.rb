@@ -49,7 +49,7 @@ Licensee.where(eye_color: 'Hazel').where do |p| p.hair_color == 'Black' || p.hai
 # question 5:
 
 #Easy to do, just needed more time.
-# It'd have a #find_by {names}, #update! etc., etc.
+# It'd have a #find_by {names}, #update the height with =- etc., etc.
 
 # question 6:
 
