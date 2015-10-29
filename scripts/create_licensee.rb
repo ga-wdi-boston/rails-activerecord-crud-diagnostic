@@ -1,0 +1,1 @@
+caren = Licensee.create()
