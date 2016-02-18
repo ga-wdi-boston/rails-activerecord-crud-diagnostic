@@ -27,7 +27,7 @@ Add code you write to `diagnostic.rb`
  `Bishop, Caren, f, 63, 132, 1943-09-26, Brown, Black`
   into the table of licensees.
 
--   Question 3. Use CSV.foreach and ActiveRecord to load the data from
+-   Question 3. Use the given CSV.foreach and ActiveRecord to load the data from
  `data/licensees.csv` into the `licensees` table.
 
 -   Question 4. Use ActiveRecord to retrieve all the licensees with Hazel
@@ -40,7 +40,8 @@ Add code you write to `diagnostic.rb`
  the table of licensees.
 
 You can test your work, except the migration, with `rails runner diagnostic.rb`.
- Use `p` in your script to output any results you'd like to check.
+Use `p` in your script to output any results you'd like to check.
+To start over, run `rake db:drop db:create db:migrate`.
 
 Commit and push your changes.
 
