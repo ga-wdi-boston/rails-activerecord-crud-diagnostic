@@ -1,5 +1,5 @@
 require 'csv'
-# Assessment answers to:
+# Diagnostic answers to:
 
 # question 2:
 
