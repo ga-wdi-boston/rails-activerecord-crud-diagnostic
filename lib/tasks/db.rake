@@ -3,7 +3,7 @@ require 'csv'
 namespace :db do
   namespace :populate do
     desc 'Populate database with example data'
-    task licensees: [:licensees]
+    task all: [:licensees]
 
     desc 'Populate database with licensees'
     task licensees: :environment do
