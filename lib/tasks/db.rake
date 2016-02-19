@@ -1,12 +1,4 @@
 require 'csv'
-# Diagnostic answers to:
-# I made a huge mistake and started actually doing the actions
-# rather than writing the answers.  I sucked up a huge amount
-# of time doing that.  So sorry
-# question 2:
-
-# question 3:
-require 'csv'
 
 namespace :db do
   namespace :populate do
@@ -25,11 +17,3 @@ namespace :db do
     end
   end
 end
-
-
-# question 4:
-
-
-# question 5:
-
-# question 6:
