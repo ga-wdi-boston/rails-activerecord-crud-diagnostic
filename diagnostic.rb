@@ -20,6 +20,7 @@ Licensee.transaction do
 end
 
 # question 4:
+Licensee.where(eye_color: 'Hazel',hair_color: 'Brown', hair_color: 'Black')
 
 # question 5:
 
