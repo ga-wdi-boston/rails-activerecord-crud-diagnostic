@@ -20,5 +20,6 @@ Licensee.transaction do
 end
 
 # question 4:
+Licensee.where
 
 # question 5:
