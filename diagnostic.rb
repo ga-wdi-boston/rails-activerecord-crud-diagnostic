@@ -9,6 +9,9 @@ Licensee.transaction do
   end
 end
 
+ rake import data/licensees.csv
+
 # question 4:
 
 # question 5:
+Licensee.destroy(10, 8)
