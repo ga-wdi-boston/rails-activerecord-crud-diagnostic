@@ -33,10 +33,7 @@ Add code you write to `diagnostic.rb`
 -   Question 4. Use ActiveRecord to retrieve all the licensees with Hazel
  eye color and Brown or Black hair color.
 
--   Question 5. Use ActiveRecord to make each of Marilynn Escobar and
- Chris Whaley one inch shorter. Look them up by their names.
-
--   Question 6. Use ActiveRecord to remove Dylan Rich and Teresita Myers from
+-   Question 5. Use ActiveRecord to remove Dylan Rich and Teresita Myers from
  the table of licensees.
 
 You can test your work, except the migration, with `rails runner diagnostic.rb`.

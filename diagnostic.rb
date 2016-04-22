@@ -14,6 +14,4 @@ end
 # question 4:
 Licensee.where("eye_color = 'Hazel'").where("hair_color = ? OR hair_color = ?", 'Brown', 'Black')
 # question 5:
-
-# question 6:
 Licensee.where("given_name = ? OR given_name = ?", "Dylan", "Teresita").destroy_all
