@@ -12,5 +12,3 @@ end
 # question 4:
 
 # question 5:
-
-# question 6:
