@@ -43,3 +43,6 @@ To start over, run `rake db:drop db:create db:migrate`.
 Commit and push your changes.
 
 Submit a pull request.
+curl --include --request POST http://localhost:3000/licensees \
+--header "Content-Type: application/json" \
+--data '{"licensee": { "surname": "Bishop", "given_name": "Caren", "gender": "f", "height":63, "weight":132, "born_on":"1943-09026", "eye_color": "Brown", "hair_color":"Black"}’
