@@ -2,9 +2,6 @@ require 'csv'
 # Diagnostic answers to:
 
 # question 2:
-Licensee.CreateLicensees('Bishop', 'Caren', 'f', 63, 132, '1943-09-26', 'Brown',
-                         'Black')
-
 Licensee.create(
   surname: 'Bishop',
   given_name: 'Caren',
@@ -19,7 +16,16 @@ Licensee.create(
 # question 3:
 Licensee.transaction do
   CSV.foreach 'data/licensees.csv', headers: true do |row|
-    Licensee.CreateLicensees(row)
+    Licensee.create(
+      surname: row.surname,
+      given_name: row.given_name,
+      gender: row.gender,
+      height: row.height,
+      weight: row.weight,
+      born_on: row.born_on,
+      eye_color: row.eye_color,
+      hair_color: row.hair_color
+    )
   end
 end
 
