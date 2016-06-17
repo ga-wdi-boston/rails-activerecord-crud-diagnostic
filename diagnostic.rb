@@ -30,10 +30,14 @@ Licensee.transaction do
 end
 
 # question 4:
-Licensee.where(eye_color: 'Hazel').where(hair_color: 'brown').or(hair_color:
-'black')
+sql = "SELECT id FROM Licensee WHERE eye_color = 'Hazel' AND hair_color IN
+('brown', 'black')"
+Licensee.where(id: sql)
 
 # question 5:
-licensee = Licensee.where(surname: 'Rich', given_name: 'Dylan').or(surname:
-'Myers', given_name: 'Teresita')
-licensee.destroy
+sql = "SELECT
+        id
+       FROM Licensee
+       WHERE (surname = 'Rich' AND given_name = 'Dylan')
+        OR (surname = 'Myers' AND given_name = 'Teresita')"
+Licensee.delete(sql)
