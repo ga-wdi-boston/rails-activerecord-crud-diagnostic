@@ -1,3 +1,4 @@
+#
 class LicenseesController < ApplicationController
   before_action :set_licensee, only: [:show, :update, :destroy]
 
@@ -49,11 +50,11 @@ class LicenseesController < ApplicationController
 
   private
 
-    def set_licensee
-      @licensee = Licensee.find(params[:id])
-    end
+  def set_licensee
+    @licensee = Licensee.find(params[:id])
+  end
 
-    def licensee_params
-      params[:licensee]
-    end
+  def licensee_params
+    params[:licensee]
+  end
 end
