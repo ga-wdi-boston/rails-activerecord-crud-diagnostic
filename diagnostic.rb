@@ -17,14 +17,14 @@ Licensee.create(
 Licensee.transaction do
   CSV.foreach 'data/licensees.csv', headers: true do |row|
     Licensee.create(
-      surname: row.surname,
-      given_name: row.given_name,
-      gender: row.gender,
-      height: row.height,
-      weight: row.weight,
-      born_on: row.born_on,
-      eye_color: row.eye_color,
-      hair_color: row.hair_color
+      surname: row[0],
+      given_name: row[1],
+      gender: row[2],
+      height: row[3],
+      weight: row[4],
+      born_on: row[5],
+      eye_color: row[6],
+      hair_color: row[7]
     )
   end
 end
