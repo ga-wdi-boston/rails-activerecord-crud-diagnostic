@@ -24,6 +24,7 @@ Add code you write to `diagnostic.rb`
   `data/licensees.csv`.  Run `rake db:migrate` to create the table.
 
 -   Question 2. Use ActiveRecord to add
+
  `Bishop, Caren, f, 63, 132, 1943-09-26, Brown, Black`
   into the table of licensees.
 
