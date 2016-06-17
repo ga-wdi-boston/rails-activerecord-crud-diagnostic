@@ -1,0 +1,1 @@
+\copy licensees(surname,given_name,gender,height,weight,born_on,eye_color,hair_color) FROM 'data/licensees.csv' WITH (HEADER true, FORMAT csv)
