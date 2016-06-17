@@ -32,7 +32,7 @@ end
 # question 4:
 sql = "SELECT id FROM Licensee WHERE eye_color = 'Hazel' AND hair_color IN
 ('brown', 'black')"
-Licensee.find(id: sql)
+Licensee.where(id: sql)
 
 # question 5:
 sql = "SELECT
